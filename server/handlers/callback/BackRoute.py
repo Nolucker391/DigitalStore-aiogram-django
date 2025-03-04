@@ -1,7 +1,8 @@
 from aiogram import F
 from aiogram.types import CallbackQuery
 
-from handlers.Catalog.subcategories.computers import computer_selection, show_gaming_pc_with_cart
+from handlers.Catalog.subcategories.computers import computer_selection
+from handlers.Catalog.subcategories.gaming.gaming_comp import show_gaming_pc_with_cart
 from handlers.Catalog.subcategories.laptops import laptops_selection
 from handlers.Catalog.subcategories.monoblocks import monoblock_selection
 from handlers.DefaultCommands.StartCommand import start_command

@@ -2,7 +2,11 @@ from . import (
     laptops,
     monoblocks,
     computers,
+    apple,
+    huawei,
+    lenovo,
     office,
     workpc,
-    gaming
+    gaming,
+    utils
 )

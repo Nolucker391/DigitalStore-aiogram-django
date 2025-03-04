@@ -1,10 +1,3 @@
-from aiogram import types, F
-from aiogram.types import InputMediaPhoto, FSInputFile
-
-from states.history_static import set_user_state
-from handlers.routes import router
-from aiogram.fsm.context import FSMContext
-from states.states import UserState
 from keyboards.catalog.sub_cat.LaptopsBuilder import laptop_builder
 
 
@@ -20,27 +13,6 @@ from states.history_static import set_user_state
 from states.states import UserState
 from keyboards.catalog.sub_cat.ComputersBuilder import computer_builder, build_navigation_keyboard
 from products.models import Product, Category
-
-
-
-async def get_subcategory_products(parent_category_name, subcategory_name):
-    """
-    Получает товары из подкатегории, если она действительно относится к указанной категории.
-    """
-    parent_category = await sync_to_async(lambda: Category.objects.filter(name=parent_category_name).first())()
-
-    if not parent_category:
-        return []
-
-    # Проверяем, есть ли у родительской категории подкатегория с нужным названием
-    subcategory = await sync_to_async(lambda: parent_category.subcategories.filter(name=subcategory_name).first())()
-
-    if not subcategory:
-        return []
-
-    # Получаем все товары из этой подкатегории
-    products = await sync_to_async(lambda: list(subcategory.products.all()))()
-    return products
 
 
 @router.callback_query(F.data == 'laptops')

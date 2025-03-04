@@ -8,7 +8,7 @@ from aiogram.fsm.context import FSMContext
 from states.history_static import set_user_state
 from states.states import UserState
 from keyboards.catalog.sub_cat.ComputersBuilder import computer_builder, build_navigation_keyboard
-
+from .utils.product_process import update_product_message
 
 @router.callback_query(F.data == 'computers')
 async def computer_selection(callback: types.CallbackQuery, state: FSMContext):
