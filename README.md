@@ -17,7 +17,7 @@
 
 Макеты были созданы в Figma + Photoshop. Реализация выполненыа с использованием Django, aiogram 3.
 
-# Демо-версия 
+## Демо-версия 
 [Demo-version](https://github.com/user-attachments/assets/ee3d20bb-003d-4239-b60e-c1a3da054100)
 
 ## Схема
