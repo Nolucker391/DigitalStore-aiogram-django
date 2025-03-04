@@ -1,5 +1,8 @@
 from . import (
     laptops,
     monoblocks,
-    computers
+    computers,
+    office,
+    workpc,
+    gaming
 )

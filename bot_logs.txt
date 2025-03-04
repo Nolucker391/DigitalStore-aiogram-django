@@ -1,0 +1,284 @@
+2025-03-04 15:13:25,855 - INFO - Бот 🧬 A & Z | DigitalStore запущен!
+2025-03-04 15:13:25,926 - INFO - Start polling
+2025-03-04 15:13:25,926 - INFO - Run polling for bot @almir_test_bot id=7687262287 - '🧬 A & Z | DigitalStore'
+2025-03-04 15:13:30,973 - INFO - Пользователь: Pool выбрал раздел Компьютеры/Игровые
+2025-03-04 15:13:35,491 - INFO - Update id=978409064 is handled. Duration 4518 ms by bot id=7687262287
+2025-03-04 15:13:51,628 - WARNING - Received SIGINT signal
+2025-03-04 15:13:51,632 - INFO - Polling stopped for bot @almir_test_bot id=7687262287 - '🧬 A & Z | DigitalStore'
+2025-03-04 15:13:51,633 - INFO - Polling stopped
+2025-03-04 15:14:06,727 - INFO - Бот 🧬 A & Z | DigitalStore запущен!
+2025-03-04 15:14:06,894 - INFO - Start polling
+2025-03-04 15:14:06,895 - INFO - Run polling for bot @almir_test_bot id=7687262287 - '🧬 A & Z | DigitalStore'
+2025-03-04 15:14:11,424 - INFO - Нажата комманда /start
+2025-03-04 15:14:11,424 - INFO - 🔍 Данные пользователя: ID: 687061691, Username: Nolucker, First Name: Pool
+2025-03-04 15:14:12,257 - INFO - ✅ Новый пользователь зарегистрирован: Pool (@Nolucker)
+2025-03-04 15:14:13,081 - INFO - Update id=978409065 is handled. Duration 1657 ms by bot id=7687262287
+2025-03-04 15:14:13,976 - INFO - Пользователь: Pool выбрал раздел Каталога.
+2025-03-04 15:14:16,320 - INFO - Update id=978409066 is handled. Duration 2345 ms by bot id=7687262287
+2025-03-04 15:14:17,946 - INFO - Пользователь: Pool выбрал раздел Компьютеры.
+2025-03-04 15:14:18,397 - INFO - Update id=978409067 is handled. Duration 452 ms by bot id=7687262287
+2025-03-04 15:14:18,924 - INFO - Пользователь: Pool выбрал раздел Компьютеры/Игровые
+2025-03-04 15:14:21,067 - INFO - Update id=978409068 is handled. Duration 2144 ms by bot id=7687262287
+2025-03-04 15:15:57,210 - WARNING - Received SIGINT signal
+2025-03-04 15:15:57,213 - INFO - Polling stopped for bot @almir_test_bot id=7687262287 - '🧬 A & Z | DigitalStore'
+2025-03-04 15:15:57,213 - INFO - Polling stopped
+2025-03-04 15:15:57,648 - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x10673b110>
+2025-03-04 15:16:10,165 - INFO - Бот 🧬 A & Z | DigitalStore запущен!
+2025-03-04 15:16:10,229 - INFO - Start polling
+2025-03-04 15:16:10,229 - INFO - Run polling for bot @almir_test_bot id=7687262287 - '🧬 A & Z | DigitalStore'
+2025-03-04 15:16:10,827 - INFO - Нажата комманда /start
+2025-03-04 15:16:10,827 - INFO - 🔍 Данные пользователя: ID: 687061691, Username: Nolucker, First Name: Pool
+2025-03-04 15:16:11,048 - INFO - Update id=978409069 is not handled. Duration 222 ms by bot id=7687262287
+2025-03-04 15:16:11,049 - ERROR - Cause exception while process update id=978409069 by bot id=7687262287
+OperationalError: no such table: users_user
+Traceback (most recent call last):
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: users_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/server/handlers/DefaultCommands/StartCommand.py", line 66, in start_command
+    user_db, created = await sync_to_async(add_user)(user_id, username, first_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/skillbox/PycharmProjects/ai/server/handlers/DefaultCommands/StartCommand.py", line 29, in add_user
+    user, created = User.objects.get_or_create(
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        tg_id=tg_id,
+        ^^^^^^^^^^^^
+        defaults={"username": username or "", "first_name": first_name or ""}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/django/db/models/query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: users_user
+2025-03-04 15:16:18,225 - WARNING - Received SIGINT signal
+2025-03-04 15:16:18,228 - INFO - Polling stopped for bot @almir_test_bot id=7687262287 - '🧬 A & Z | DigitalStore'
+2025-03-04 15:16:18,229 - INFO - Polling stopped
+2025-03-04 15:16:18,639 - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x105ff3110>
+2025-03-04 15:16:18,639 - ERROR - Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x107f349b0>, 166667.965239291)])']
+connector: <aiohttp.connector.TCPConnector object at 0x105ff2850>
+2025-03-04 15:16:41,918 - INFO - Бот 🧬 A & Z | DigitalStore запущен!
+2025-03-04 15:16:41,995 - INFO - Start polling
+2025-03-04 15:16:41,995 - INFO - Run polling for bot @almir_test_bot id=7687262287 - '🧬 A & Z | DigitalStore'
+2025-03-04 15:16:42,196 - INFO - Нажата комманда /start
+2025-03-04 15:16:42,196 - INFO - 🔍 Данные пользователя: ID: 687061691, Username: Nolucker, First Name: Pool
+2025-03-04 15:16:42,499 - INFO - ✅ Новый пользователь зарегистрирован: Pool (@Nolucker)
+2025-03-04 15:16:43,444 - INFO - Update id=978409070 is handled. Duration 1248 ms by bot id=7687262287
+2025-03-04 15:16:44,274 - INFO - Пользователь: Pool выбрал раздел Каталога.
+2025-03-04 15:16:44,969 - INFO - Update id=978409071 is handled. Duration 695 ms by bot id=7687262287
+2025-03-04 15:16:46,057 - INFO - Пользователь: Pool выбрал раздел Компьютеры.
+2025-03-04 15:16:46,265 - INFO - Update id=978409072 is handled. Duration 208 ms by bot id=7687262287
+2025-03-04 15:16:47,258 - INFO - Пользователь: Pool выбрал раздел Компьютеры/Игровые
+2025-03-04 15:16:47,689 - INFO - Update id=978409073 is handled. Duration 431 ms by bot id=7687262287
+2025-03-04 15:16:51,168 - INFO - Пользователь: Pool выбрал раздел Компьютеры.
+2025-03-04 15:16:51,330 - INFO - Update id=978409074 is not handled. Duration 167 ms by bot id=7687262287
+2025-03-04 15:16:51,331 - ERROR - Cause exception while process update id=978409074 by bot id=7687262287
+TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+Traceback (most recent call last):
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/server/handlers/callback/BackRoute.py", line 41, in back_to_menu
+    await computer_selection(callback, state)
+  File "/Users/skillbox/PycharmProjects/ai/server/handlers/Catalog/subcategories/computers.py", line 42, in computer_selection
+    await callback.message.edit_media(
+    ...<5 lines>...
+    )
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/client/bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/client/session/aiohttp.py", line 185, in make_request
+    response = self.check_response(
+        bot=bot, method=method, status_code=resp.status, content=raw_result
+    )
+  File "/Users/skillbox/PycharmProjects/ai/venv/lib/python3.13/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2025-03-04 15:16:57,046 - WARNING - Received SIGINT signal
+2025-03-04 15:16:57,048 - INFO - Polling stopped for bot @almir_test_bot id=7687262287 - '🧬 A & Z | DigitalStore'
+2025-03-04 15:16:57,049 - INFO - Polling stopped
+2025-03-04 15:16:57,438 - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x1065d3110>
+2025-03-04 15:16:57,438 - ERROR - Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x1155049b0>, 166699.417972083)])']
+connector: <aiohttp.connector.TCPConnector object at 0x1065d2850>

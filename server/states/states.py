@@ -8,6 +8,8 @@ class UserState(StatesGroup):
     select_monoblocks = State()
 
     select_gaming_pc = State()
+    select_office_pc = State()
+    select_work_pc = State()
 
     add_basket_prod = State()
 
