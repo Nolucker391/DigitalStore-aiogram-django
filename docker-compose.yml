@@ -1,0 +1,54 @@
+#version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres_db
+    restart: always
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  django:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: django_api
+    restart: always
+    depends_on:
+      - postgres
+    environment:
+      - DATABASE_URL=postgres://admin:admin@postgres:5432/postgresql
+    command: >
+      bash -c "python manage.py migrate &&
+               python manage.py runserver"
+    #               python manage.py loaddata fixtures/products-fixtures.json &&
+#               python manage.py loaddata fixtures/users-fixtures.json
+#               python manage.py loaddata fixtures/userprofile-fixtures.json
+#               python manage.py loaddata fixtures/orders-fixtures.json
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: telegram_bot
+    restart: always
+    depends_on:
+      - django
+    environment:
+      - PYTHONPATH=/app
+      - .env
+    command: >
+      sh -c "export PYTHONPATH=/app && python server/bot.py"
+
+volumes:
+  postgres_data:
