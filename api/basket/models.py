@@ -2,6 +2,7 @@ from django.db import models
 from products.models import Product
 
 class Basket(models.Model):
+    """Корзина пользователя."""
     telegram_id = models.BigIntegerField(verbose_name="Telegram ID")
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="baskets")
     count = models.PositiveIntegerField(default=1, verbose_name="Количество")
