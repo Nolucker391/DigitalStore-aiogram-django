@@ -1,0 +1,432 @@
+[
+{
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+        "name": "компьютеры",
+        "parent": null
+    }
+},
+{
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+        "name": "игровые",
+        "parent": 1
+    }
+},
+{
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+        "name": "офисные",
+        "parent": 1
+    }
+},
+{
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+        "name": "для работы",
+        "parent": 1
+    }
+},
+{
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+        "name": "ноутбуки",
+        "parent": null
+    }
+},
+{
+    "model": "products.category",
+    "pk": 6,
+    "fields": {
+        "name": "apple",
+        "parent": 5
+    }
+},
+{
+    "model": "products.category",
+    "pk": 7,
+    "fields": {
+        "name": "huawei",
+        "parent": 5
+    }
+},
+{
+    "model": "products.category",
+    "pk": 8,
+    "fields": {
+        "name": "lenovo",
+        "parent": 5
+    }
+},
+{
+    "model": "products.category",
+    "pk": 9,
+    "fields": {
+        "name": "моноблоки",
+        "parent": null
+    }
+},
+{
+    "model": "products.category",
+    "pk": 10,
+    "fields": {
+        "name": "виндовс",
+        "parent": 9
+    }
+},
+{
+    "model": "products.category",
+    "pk": 11,
+    "fields": {
+        "name": "apple_imac",
+        "parent": 9
+    }
+},
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "name": "игровой компьютер",
+        "description": "• Видеокарта:                         RTX 4090 GameRock\r\n• Процессор:                          i9 14900K\r\n• Оперативная память:         32 GB DDR5 \r\n• Материнская плата:           MSI PRO Z7790-P WIFI\r\n• Блок питания:                      1000W GOLD DeepCool PX1000G\r\n• SSD:                                       1TB M2\r\n• Водяное охлаждение:         ID-COOLING SL360 XE\r\n• Корпус:                                  Pyramid L",
+        "price": "130290.00",
+        "category": 2,
+        "created_at": "2025-03-05T10:18:00.418Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "name": "игровой компьютер",
+        "description": "• Видеокарта:                         RTX 4090 GameRock\r\n• Процессор:                          i7 7700K\r\n• Оперативная память:         32 GB DDR5 \r\n• Материнская плата:            MSI PRO \r\n• Блок питания:                       700W GOLD \r\n• SSD:                                        1TB M2\r\n• Водяное охлаждение:          ID-COOLING SL360 XE\r\n• Корпус:                                   Lian Li",
+        "price": "103900.00",
+        "category": 2,
+        "created_at": "2025-03-05T10:39:28.127Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "name": "игровой компьютер",
+        "description": "• Видеокарта:                          RTX 4090 GameRock White\r\n• Процессор:                           i7 13900K\r\n• Оперативная память:          32 GB DDR5 \r\n• Материнская плата:            MSI PRO H650BM\r\n• Блок питания:                       1000W GOLD DeepCool PX1000G\r\n• SSD:                                        1TB M2\r\n• Водяное охлаждение:          ID-COOLING SL360 XE\r\n• Корпус:                                   Lian Li XL",
+        "price": "213990.00",
+        "category": 2,
+        "created_at": "2025-03-05T10:40:57.845Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "name": "игровой компьютер",
+        "description": "• Видеокарта:                              RTX 4090\r\n• Процессор:                               i5 12400F\r\n• Оперативная память:               32 GB DDR4 \r\n• Материнская плата:                  MSI PRO Z7790-P WIFI\r\n• Блок питания:                             700W GOLD \r\n• SSD:                                              1TB M2\r\n• Водяное охлаждение:                ID-COOLING SL360 XE\r\n• Корпус:                                         Montech",
+        "price": "98200.00",
+        "category": 2,
+        "created_at": "2025-03-05T10:41:51.048Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "name": "офисные компьютеры",
+        "description": "• Видеокарта:                               gtx 1060\r\n• Процессор:                                xeon e2650v2\r\n• Оперативная память:               32 GB \r\n• Материнская плата:                  x79\r\n• Блок питания:                             500W \r\n• SSD:                                              512GB M2\r\n• Воздушное охлаждение:           Pestune \r\n• Корпус:                                         kubik 2x2",
+        "price": "32100.00",
+        "category": 3,
+        "created_at": "2025-03-05T10:46:25.990Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "name": "офисные компьютеры",
+        "description": "• Видеокарта:                          gtx 1050\r\n• Процессор:                            xeon e2650v2\r\n• Оперативная память:           32 GB \r\n• Материнская плата:             x79\r\n• Блок питания:                        500W \r\n• SSD:                                         512GB M2\r\n• Воздушное охлаждение:     Pestune V2\r\n• Корпус:                                   kubik 2x5",
+        "price": "28750.00",
+        "category": 3,
+        "created_at": "2025-03-05T10:47:11.749Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "name": "компьютер для ворка",
+        "description": "work work work\r\n• Видеокарта:                           RTX 2060 Super\r\n• Процессор:                            xeon e2650v2\r\n• Оперативная память:           32 GB \r\n• Материнская плата:              x79\r\n• Блок питания:                         500W \r\n• SSD:                                          512GB M2\r\n• Воздушное охлаждение:       Ardor  VIsi\r\n• Корпус:                                     Ardor",
+        "price": "43299.00",
+        "category": 4,
+        "created_at": "2025-03-05T10:50:25.444Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "name": "компьютер для ворка",
+        "description": "work work work\r\n• Видеокарта:                               RTX 2060 Super\r\n• Процессор:                                ryzen 5 3600\r\n• Оперативная память:               16 GB  DDR4\r\n• Материнская плата:                  MSI\r\n• Блок питания:                             600W \r\n• SSD:                                              512GB M2\r\n• Воздушное охлаждение:           Ardor  Gup\r\n• Корпус:                                         Ardor",
+        "price": "43122.00",
+        "category": 4,
+        "created_at": "2025-03-05T10:51:18.100Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "name": "MacBook Air",
+        "description": "M1, 2020\r\n\r\n• Чип:                     Apple M1\r\n• macOS:               Sonoma 14.4.1\r\n• Память:               8 ГБ",
+        "price": "45600.00",
+        "category": 6,
+        "created_at": "2025-03-05T11:25:17.186Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+        "name": "MacBook Air",
+        "description": "M1, 2024\r\n\r\n• Чип:                     Apple M2\r\n• macOS:                Sonoma 14.4.1\r\n• Память:               16 ГБ",
+        "price": "86628.00",
+        "category": 6,
+        "created_at": "2025-03-05T11:25:46.122Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+        "name": "Huawei MateBook X Pro",
+        "description": "• Экран:                                             14.2\" 3120x2080 (3:2) 120 Гц, OLED\r\n• Процессор:                                    Intel Core Ultra 7 (Series 1) 155H\r\n• Оперативная память:                   16 Гб DDR5\r\n• Объём установленного SSD:       1 Тб\r\n• Графический чипсет:                    Intel Arc Graphics\r\n• Сетевой интерфейс:                     Wi-Fi, Bluetooth\r\n• Операционная система:               Windows 11 Home\r\n• Цвет:                                                 белый",
+        "price": "181290.00",
+        "category": 7,
+        "created_at": "2025-03-05T11:29:31.350Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+        "name": "Huawei Matebook D14",
+        "description": "• Размер экрана:                 14\r\n• Разрешение экрана:        1920x1080\r\n• Тип матрицы:                     IPS\r\n• Модель Процессора:       AMD Ryzen 5-5500U\r\n• Количество потоков:        12\r\n• Оперативная память:       8 ГБ\r\n• Накопитель:                       SSD 512 ГБ\r\n• Видеокарта:                       AMD Radeon RX Vega 7\r\n• Вес: 1.36",
+        "price": "98829.00",
+        "category": 7,
+        "created_at": "2025-03-05T11:31:22.380Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+        "name": "Lenovo V15 G3 IAP",
+        "description": "• Диагональ экрана (дюйм)          15.6\r\n• Разрешение экрана                    Full HD (1920×1080)\r\n• Линейка процессора                  Intel Core i5\r\n• Оперативная память                   8 Гб\r\n• Модель видеокарты                     Intel UHD Graphics Xe G4\r\n• Тип оперативной памяти           DDR4\r\n• Накопитель                                   512 Гб",
+        "price": "72111.00",
+        "category": 8,
+        "created_at": "2025-03-05T11:35:03.552Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+        "name": "Lenovo ThinkPad T14 G4 14\"",
+        "description": "• Диагональ экрана (дюйм)         14\r\n• Разрешение экрана                    Full HD (1920×1080) IPS\r\n• Линейка процессора                  Intel Core i7\r\n• Оперативная память                  16 Гб\r\n• Модель видеокарты                    Nvidia Geforce MX550\r\n• Тип оперативной памяти           DDR4\r\n• Накопитель                                  512 Гб",
+        "price": "92212.00",
+        "category": 8,
+        "created_at": "2025-03-05T11:37:01.370Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+        "name": "Моноблок Aspire C27-195ES",
+        "description": "• Диагональ экрана, дюймы 27\r\n• Процессор Intel Core Ultra 7 155U\r\n• Оперативная память, ГБ 16\r\n• Общий объем SSD, ГБ 512\r\n• Видеокарта Intel Graphics",
+        "price": "67332.00",
+        "category": 10,
+        "created_at": "2025-03-05T12:26:12.999Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+        "name": "моноблок svip",
+        "description": "• Диагональ экрана, дюймы 22\r\n• Процессор Intel Core Ultra 5 155U\r\n• Оперативная память, ГБ 16\r\n• Общий объем SSD, ГБ 512\r\n• Видеокарта Nvidia GTX 1060",
+        "price": "89211.00",
+        "category": 10,
+        "created_at": "2025-03-05T12:28:26.372Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+        "name": "Моноблок Apple iMac Retina 4K",
+        "description": "• Процессор Intel Core i3-8100\r\n• Тип видеокарты Radeon Pro 555X с 2 ГБ памяти GDDR5\r\n• Диагональ экрана\t21.5 дюйм\r\n• Общий объем SSD 256 ГБ",
+        "price": "65772.00",
+        "category": 11,
+        "created_at": "2025-03-05T12:30:23.681Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+        "name": "Apple iMac 24 Retina 4,5K M3",
+        "description": "• Год релиза 2023\r\n• Веб-камера HD-камера FaceTime 1080p\r\n• Количество ядер процессора 8-Core\r\n• Разрешение экрана 4480x2520\r\n• Конфигурация накопителей SSD",
+        "price": "99882.00",
+        "category": 11,
+        "created_at": "2025-03-05T12:32:27.538Z"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 1,
+    "fields": {
+        "product": 1,
+        "image": "products/компьютеры/игровые/product_1/photo_5350798359507626838_y.jpg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 2,
+    "fields": {
+        "product": 2,
+        "image": "products/компьютеры/игровые/product_2/photo_5350798359507626872_y.jpg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 3,
+    "fields": {
+        "product": 3,
+        "image": "products/компьютеры/игровые/product_3/photo_5350798359507626865_y.jpg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 4,
+    "fields": {
+        "product": 4,
+        "image": "products/компьютеры/игровые/product_4/photo_5350798359507626870_y.jpg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 5,
+    "fields": {
+        "product": 5,
+        "image": "products/компьютеры/офисные/product_5/of.jpg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 6,
+    "fields": {
+        "product": 6,
+        "image": "products/компьютеры/офисные/product_6/office.jpg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 7,
+    "fields": {
+        "product": 7,
+        "image": "products/компьютеры/для работы/product_7/photo_5350798359507626886_y.jpg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 8,
+    "fields": {
+        "product": 8,
+        "image": "products/компьютеры/для работы/product_8/photo_5350798359507626888_y.jpg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 9,
+    "fields": {
+        "product": 9,
+        "image": "products/ноутбуки/apple/product_9/мак.jpg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 10,
+    "fields": {
+        "product": 10,
+        "image": "products/ноутбуки/apple/product_10/ма1.jpg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 11,
+    "fields": {
+        "product": 11,
+        "image": "products/ноутбуки/huawei/product_11/matebook-x-pro-ultra-premium-edition-kv.jpg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 12,
+    "fields": {
+        "product": 12,
+        "image": "products/ноутбуки/huawei/product_12/2.png"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 13,
+    "fields": {
+        "product": 13,
+        "image": "products/ноутбуки/lenovo/product_13/main_670595.jpg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 14,
+    "fields": {
+        "product": 14,
+        "image": "products/ноутбуки/lenovo/product_14/111.webp"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 15,
+    "fields": {
+        "product": 15,
+        "image": "products/моноблоки/виндовс/product_15/mno.webp"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 16,
+    "fields": {
+        "product": 16,
+        "image": "products/моноблоки/виндовс/product_16/monon2.jpg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 17,
+    "fields": {
+        "product": 17,
+        "image": "products/моноблоки/apple_imac/product_17/4158.5802x.jpg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 18,
+    "fields": {
+        "product": 18,
+        "image": "products/моноблоки/apple_imac/product_18/imac.jpeg"
+    }
+}
+]

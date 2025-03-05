@@ -8,5 +8,6 @@ from . import (
     office,
     workpc,
     gaming,
+    monoblockwinapp,
     utils
 )

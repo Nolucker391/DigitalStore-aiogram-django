@@ -42,7 +42,7 @@ async def update_product_message(callback: types.CallbackQuery, state: FSMContex
     await callback.message.edit_media(
         media=InputMediaPhoto(
             media=FSInputFile(image_path),
-            caption=f"🖥 <b>Название:</b> {prod.name}\n📜 <b>Описание:</b> {prod.description}\n💰 <b>Цена:</b> {prod.price} руб."
+            caption=f"🖥 <b>Название:</b> {prod.name}\n📜 <b>Описание:</b>\n {prod.description}\n💰 \n<b>Цена:</b> {prod.price} руб."
         ),
         reply_markup=builder.as_markup()
     )

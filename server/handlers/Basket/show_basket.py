@@ -50,7 +50,7 @@ async def show_user_cart(callback: types.CallbackQuery, state: FSMContext):
     description += f"\n<b>Итого:</b> {total_price} руб."
 
     # Указываем твой статичный файл для фото (измените путь)
-    file_path = "server/assets/images/computers.png"
+    file_path = "server/assets/images/basket.png"
 
     # Создаём клавиатуру
     builder = InlineKeyboardBuilder()

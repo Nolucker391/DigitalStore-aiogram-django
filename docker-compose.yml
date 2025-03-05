@@ -29,12 +29,16 @@ services:
                cd api &&
                python manage.py migrate &&
                python createsuperuser.py &&
+               python manage.py loaddata fixtures/products-fixtures.json &&
+               python manage.py loaddata fixtures/users-fixtures.json &&
+               python manage.py loaddata fixtures/orders-fixtures.json &&
                python manage.py runserver 0.0.0.0:8000"
     ports:
       - "8000:8000"
     volumes:
       - .:/app
-      - shared_media:/app/api/uploads
+      - ./api/uploads:/app/api/uploads  # ЛОКАЛЬНОЕ СОХРАНЕНИЕ ФАЙЛОВ : В контейнере сохранение
+
 
   bot:
     build:
@@ -49,9 +53,8 @@ services:
     command: >
       bash -c "sleep 3 && export PYTHONPATH=/app && python server/bot.py"
     volumes:
-      - shared_media:/app/api/uploads
+      - ./api/uploads:/app/api/uploads  # ЛОКАЛЬНОЕ СОХРАНЕНИЕ ФАЙЛОВ : В контейнере сохранение
 
 volumes:
   postgres_data:
-  shared_media:
 

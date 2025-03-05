@@ -5,4 +5,5 @@ from . import (
     FreqAskedQuestions,
     callback,
     orders,
+    bonuska,
 )

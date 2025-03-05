@@ -15,7 +15,7 @@ from states.history_static import set_user_state
 async def section_shop(callback: types.CallbackQuery, state: FSMContext):
     logger.info(f"Пользователь: {callback.from_user.first_name} выбрал раздел FAQ.")
     builder = faq_list_questins()
-    file_path = "server/assets/images/menu.png"
+    file_path = "server/assets/images/faq.png"
 
     await callback.message.edit_media(
         media=InputMediaPhoto(

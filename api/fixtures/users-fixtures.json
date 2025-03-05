@@ -1,0 +1,22 @@
+[
+{
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+        "tg_id": 687061691,
+        "username": "Nolucker",
+        "first_name": "Pool",
+        "created_at": "2025-03-05T13:58:37.866Z"
+    }
+},
+{
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+        "tg_id": 827608021,
+        "username": "Klatch8",
+        "first_name": "Klatch",
+        "created_at": "2025-03-05T14:16:20.163Z"
+    }
+}
+]

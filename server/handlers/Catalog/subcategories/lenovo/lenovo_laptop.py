@@ -17,7 +17,7 @@ async def show(callback: types.CallbackQuery, state: FSMContext):
 
 
     if not products:
-        await callback.answer("❌ В подкатегории 'Игровые компьютеры' пока нет товаров.")
+        await callback.answer("❌ В подкатегории 'Ноутбуки/Lenovo' пока нет товаров.")
         return
 
     # Записываем список товаров и текущий индекс в FSMContext
