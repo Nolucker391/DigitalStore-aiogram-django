@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
-
+import sys
 from pathlib import Path
 import os
 
@@ -28,9 +28,6 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 from typing import ClassVar
-
-from pydantic_settings import BaseSettings, SettingsConfigDict
-from pydantic import SecretStr
 
 # Application definition
 
@@ -79,7 +76,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'api.wsgi.application'
 
-bot_token = "7687262287:AAEW1ttb4x_XU74ab93hkCLuPK7FqjdR2a4"
 
 
 # Database

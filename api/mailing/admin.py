@@ -6,12 +6,11 @@ from .models import Mailing
 from users.models import User
 from aiogram import Bot
 import asyncio
-from api.settings import bot_token
+# from api.settings import bot_token
 from asgiref.sync import async_to_sync, sync_to_async
 from aiogram.types import FSInputFile
 
-
-bot = Bot(token=bot_token)
+bot = Bot(token="7687262287:AAEW1ttb4x_XU74ab93hkCLuPK7FqjdR2a4")
 
 async def send_message_to_users(message):
     users = await sync_to_async(list)(User.objects.all())
