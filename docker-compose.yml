@@ -32,6 +32,7 @@ services:
                python manage.py loaddata fixtures/products-fixtures.json &&
                python manage.py loaddata fixtures/users-fixtures.json &&
                python manage.py loaddata fixtures/orders-fixtures.json &&
+               python manage.py loaddata fixtures/mailing-fixtures.json &&
                python manage.py runserver 0.0.0.0:8000"
     ports:
       - "8000:8000"
