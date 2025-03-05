@@ -36,7 +36,7 @@ async def start_order(callback: types.CallbackQuery, state: FSMContext):
         await callback.bot.send_invoice(
             chat_id=callback.message.chat.id,
             title="Тестовая покупка",
-            description="Покупка товара (тест)\n\n⚠️ Кассовый чек доступен только в мобильном приложении Telegram (Android/iOS).",
+            description="Покупка товара (тест) ⚠️ Кассовый чек доступен только в мобильном приложении Telegram (Android/iOS).",
             payload="test_payment",
             provider_token=provider_token,
             currency=currency,

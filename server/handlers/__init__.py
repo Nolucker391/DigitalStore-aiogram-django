@@ -4,6 +4,6 @@ from . import (
     Basket,
     FreqAskedQuestions,
     callback,
-    orders,
     bonuska,
+    orders,
 )
