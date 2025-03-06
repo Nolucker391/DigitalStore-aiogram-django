@@ -2,23 +2,7 @@
 <hr />
 <br>
 
-
-<a href="https://aimeos.org/">
-    <img src="server/assets/images/logobot.png" alt="Aimeos logo" title="Aimeos" align="right" height="60" />
-    <img src="server/assets/examples/telegram.png"" alt="Aimeos logo" title="Aimeos" align="left" height="65" />
-</a>
-
-<h1 style="align: center;">DigitalStore</h1>
-
-
-<h1 align="center">
-  <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="server/assets/images/logobot.png" alt="Markdownify" width="80"></a>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="server/assets/examples/telegram.png" alt="Markdownify" width="95"></a>
-  <br>
-  DigitalStore
-  <br>
-</h1>
+<img src="server/assets/images/readmelogo.png" alt="Demo">
 
 ## Описание
 
@@ -82,5 +66,5 @@ docker-compose up
 | pillow               | `11.1.0` |
 | pydantic             | `2.10.6` |
 
-# <img src="server/assets/images/logobot.png" alt="Demo" width="70" height="70"> <img src="server/assets/examples/telegram.png" alt="Demo" width="80" height="80" style="vertical-align: top;"><span style="font-size: 55%; vertical-align: top; font-weight: bold;">DigitalStore</span>
+
 
