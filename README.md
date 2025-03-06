@@ -2,19 +2,11 @@
 <hr />
 <br>
 
-
-<img src="server/assets/images/logobot.png" alt="Demo" width="70" height="70"> <img src="server/assets/examples/telegram.png" alt="Demo" width="80" height="80" style="vertical-align: top;"><span style="font-size: 55px; vertical-align: top; font-weight: bold;">DigitalStore</span>
-
+# <img src="server/assets/images/logobot.png" alt="Demo" width="70" height="70"> <img src="server/assets/examples/telegram.png" alt="Demo" width="80" height="80" style="vertical-align: top;"><span style="font-size: 55%; vertical-align: top; font-weight: bold;">DigitalStore</span>
 
 ## Описание
 
 **[DigitalStore](https://t.me/almir_test_bot) 🛍️ представляет собой современное веб-приложение, построенное на основе микросервисной архитектуры с использованием [Django](https://ru.wikipedia.org/wiki/Django). Система разделена на логические компоненты, обеспечивающие эффективное взаимодействие между [Telegram-ботом](https://ru.wikipedia.org/wiki/Telegram) 🤖 и базой данных.**
-
-- Каталог товаров.
-- Корзина.
-- Часто задаваемые вопросы.
-- Бонусный раздел.
-
 
 **Макеты были созданы в Figma + Photoshop. Реализация выполненыа с использованием Django, aiogram 3.**
 
