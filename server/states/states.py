@@ -2,15 +2,11 @@ from aiogram.fsm.state import State, StatesGroup
 
 class UserState(StatesGroup):
     start_section = State()
-    first_section = State()
-    select_computer = State()
-    select_laptops = State()
-    select_monoblocks = State()
+    catalog_selection = State()
+    product_type_selection = State()
+    product_selection = State()
+    product_details_section = State()
 
-    select_gaming_pc = State()
-    select_office_pc = State()
-    select_work_pc = State()
-    select_apple_laptop = State()
 
     add_basket_prod = State()
 

@@ -1,4 +1,1 @@
-from . import (
-    categories,
-    subcategories
-)
+from . import main, AppleCat, Accessories, prod
