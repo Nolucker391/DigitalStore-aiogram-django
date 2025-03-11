@@ -2,12 +2,9 @@ from aiogram import types, F
 from asgiref.sync import sync_to_async
 from aiogram.fsm.context import FSMContext
 from products.models import Product
-# from basket.models import Basket
 from handlers.routes import router, logger
 from basket.models import Basket
-from keyboards.catalog.sub_cat.ComputersBuilder import build_cart_keyboard
-# from states.states import UserState
-# from states.history_static import set_user_state
+from keyboards.catalog.navigration import build_cart_keyboard
 from aiogram.fsm.context import FSMContext
 
 

@@ -3,6 +3,7 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 
 def cat_builder():
+    """Клавиатура списка Брендов каталога."""
     builder_for_first_button = InlineKeyboardBuilder()
     builder_for_first_button.row(
         types.InlineKeyboardButton(text='🍏 Apple ', callback_data='AppleCat'),
@@ -18,6 +19,8 @@ def cat_builder():
     return builder_for_first_button
 
 def apple_builder():
+    """Клавиатура от доступных товаров Брендов."""
+
     builder = InlineKeyboardBuilder()
     builder.row(
         types.InlineKeyboardButton(text='⌚️Watches', callback_data='AppleWatches'),
@@ -33,6 +36,8 @@ def apple_builder():
     return builder
 
 def sony_builder():
+    """Клавиатура от доступных товаров Брендов."""
+
     builder = InlineKeyboardBuilder()
     builder.row(
         types.InlineKeyboardButton(text='🎮 PlayStation', callback_data='SonyPlaystation'),
@@ -44,6 +49,8 @@ def sony_builder():
     return builder
 
 def samsung_builder():
+    """Клавиатура от доступных товаров Брендов."""
+
     builder = InlineKeyboardBuilder()
     builder.row(
         types.InlineKeyboardButton(text='📺 TVs', callback_data='SamsungTVs')

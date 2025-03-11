@@ -1,0 +1,1180 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2025-03-11T13:24:15.558Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Apple",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2025-03-11T13:24:28.151Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Apple → Watches",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2025-03-11T13:24:45.407Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "test apple (Apple → Watches)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0424\\u043e\\u0442\\u043e \\u043f\\u0440\\u043e\\u0434\\u0443\\u043a\\u0442\\u0430\", \"object\": \"ProductImage object (1)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2025-03-11T13:25:18.416Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Apple → Laptops",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2025-03-11T13:25:24.012Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "Apple → Phones",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2025-03-11T13:25:33.390Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "Sony",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2025-03-11T13:25:37.663Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "Sony → PlayStation",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2025-03-11T13:25:44.123Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "7",
+        "object_repr": "Sony → Headphones",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2025-03-11T13:25:50.089Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "8",
+        "object_repr": "Samsung",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2025-03-11T13:25:56.049Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "9",
+        "object_repr": "Samsung → TVs",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2025-03-11T13:26:16.226Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "test apple (Apple → Laptops)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0424\\u043e\\u0442\\u043e \\u043f\\u0440\\u043e\\u0434\\u0443\\u043a\\u0442\\u0430\", \"object\": \"ProductImage object (2)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2025-03-11T13:26:29.926Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "test apple (Apple → Phones)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0424\\u043e\\u0442\\u043e \\u043f\\u0440\\u043e\\u0434\\u0443\\u043a\\u0442\\u0430\", \"object\": \"ProductImage object (3)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2025-03-11T13:26:49.722Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "test sony (Sony → Headphones)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0424\\u043e\\u0442\\u043e \\u043f\\u0440\\u043e\\u0434\\u0443\\u043a\\u0442\\u0430\", \"object\": \"ProductImage object (4)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2025-03-11T13:26:58.530Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "test sony (Sony → PlayStation)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2025-03-11T13:27:41.164Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "6",
+        "object_repr": "test samsung (Samsung → TVs)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0424\\u043e\\u0442\\u043e \\u043f\\u0440\\u043e\\u0434\\u0443\\u043a\\u0442\\u0430\", \"object\": \"ProductImage object (5)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2025-03-11T13:28:07.175Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "test sony (Sony → PlayStation)",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u0424\\u043e\\u0442\\u043e \\u043f\\u0440\\u043e\\u0434\\u0443\\u043a\\u0442\\u0430\", \"object\": \"ProductImage object (6)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2025-03-11T13:33:23.459Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "7",
+        "object_repr": "ultram 37mm (Apple → Watches)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0424\\u043e\\u0442\\u043e \\u043f\\u0440\\u043e\\u0434\\u0443\\u043a\\u0442\\u0430\", \"object\": \"ProductImage object (7)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2025-03-11T13:33:48.739Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "8",
+        "object_repr": "ultram 23mm (Apple → Watches)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0424\\u043e\\u0442\\u043e \\u043f\\u0440\\u043e\\u0434\\u0443\\u043a\\u0442\\u0430\", \"object\": \"ProductImage object (8)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2025-03-11T13:34:00.053Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "9",
+        "object_repr": "ultram 231mm (Apple → Watches)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2025-03-11T13:34:07.758Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "10",
+        "object_repr": "ultram 23mm (Apple → Watches)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2025-03-11T13:34:29.196Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "11",
+        "object_repr": "12313 (Apple → Watches)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0424\\u043e\\u0442\\u043e \\u043f\\u0440\\u043e\\u0434\\u0443\\u043a\\u0442\\u0430\", \"object\": \"ProductImage object (9)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2025-03-11T13:34:55.492Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "12",
+        "object_repr": "ultram 23213mm (Apple → Watches)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0424\\u043e\\u0442\\u043e \\u043f\\u0440\\u043e\\u0434\\u0443\\u043a\\u0442\\u0430\", \"object\": \"ProductImage object (10)\"}}]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add Категория",
+        "content_type": 7,
+        "codename": "add_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change Категория",
+        "content_type": 7,
+        "codename": "change_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete Категория",
+        "content_type": 7,
+        "codename": "delete_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view Категория",
+        "content_type": 7,
+        "codename": "view_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add Продукт",
+        "content_type": 8,
+        "codename": "add_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change Продукт",
+        "content_type": 8,
+        "codename": "change_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete Продукт",
+        "content_type": 8,
+        "codename": "delete_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view Продукт",
+        "content_type": 8,
+        "codename": "view_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add Фото продукта",
+        "content_type": 9,
+        "codename": "add_productimage"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change Фото продукта",
+        "content_type": 9,
+        "codename": "change_productimage"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete Фото продукта",
+        "content_type": 9,
+        "codename": "delete_productimage"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view Фото продукта",
+        "content_type": 9,
+        "codename": "view_productimage"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add Корзина",
+        "content_type": 10,
+        "codename": "add_basket"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change Корзина",
+        "content_type": 10,
+        "codename": "change_basket"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete Корзина",
+        "content_type": 10,
+        "codename": "delete_basket"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view Корзина",
+        "content_type": 10,
+        "codename": "view_basket"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add Пользователь",
+        "content_type": 11,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change Пользователь",
+        "content_type": 11,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete Пользователь",
+        "content_type": 11,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view Пользователь",
+        "content_type": 11,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add order",
+        "content_type": 12,
+        "codename": "add_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change order",
+        "content_type": 12,
+        "codename": "change_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete order",
+        "content_type": 12,
+        "codename": "delete_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view order",
+        "content_type": 12,
+        "codename": "view_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add Рассылка",
+        "content_type": 13,
+        "codename": "add_mailing"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change Рассылка",
+        "content_type": 13,
+        "codename": "change_mailing"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete Рассылка",
+        "content_type": 13,
+        "codename": "delete_mailing"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view Рассылка",
+        "content_type": 13,
+        "codename": "view_mailing"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$lAgBWZRzrOqzahzOSg4wFA$7mqBatdRZBWRlGhf80MkOP3WEu2g+Bv9y8X4uFc7B28=",
+        "last_login": "2025-03-11T13:23:14.105Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@example.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-03-11T13:21:56.452Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "products",
+        "model": "category"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "products",
+        "model": "product"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "products",
+        "model": "productimage"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "basket",
+        "model": "basket"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "users",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "orders",
+        "model": "order"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "mailing",
+        "model": "mailing"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "a5sfvoe1xypxzy7bah2ye0bgi8t5fgar",
+    "fields": {
+        "session_data": ".eJxVjMEOwiAQRP-FsyHdskDx6L3fQHYXIlVDk9KejP9um_Sgx5n3Zt4q0raWuLW8xCmpqwJ1-e2Y5JnrAdKD6n3WMtd1mVgfij5p0-Oc8ut2un8HhVrZ14NFC8w9iPeDd04EEwfjut6jCRjA2D0iGeDMgSyD6zgnMcFzQIPq8wW2Zjbn:1trzZi:ZYDDvTlWmoiq9AYbKDFREizm84xHZazc9cBnvDPOYlM",
+        "expire_date": "2025-03-25T13:23:14.106Z"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+        "name": "Apple",
+        "parent": null
+    }
+},
+{
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+        "name": "Watches",
+        "parent": 1
+    }
+},
+{
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+        "name": "Laptops",
+        "parent": 1
+    }
+},
+{
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+        "name": "Phones",
+        "parent": 1
+    }
+},
+{
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+        "name": "Sony",
+        "parent": null
+    }
+},
+{
+    "model": "products.category",
+    "pk": 6,
+    "fields": {
+        "name": "PlayStation",
+        "parent": 5
+    }
+},
+{
+    "model": "products.category",
+    "pk": 7,
+    "fields": {
+        "name": "Headphones",
+        "parent": 5
+    }
+},
+{
+    "model": "products.category",
+    "pk": 8,
+    "fields": {
+        "name": "Samsung",
+        "parent": null
+    }
+},
+{
+    "model": "products.category",
+    "pk": 9,
+    "fields": {
+        "name": "TVs",
+        "parent": 8
+    }
+},
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "name": "test apple",
+        "description": "123",
+        "price": "123.00",
+        "category": 2,
+        "created_at": "2025-03-11T13:24:45.400Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "name": "test apple",
+        "description": "123",
+        "price": "123.00",
+        "category": 3,
+        "created_at": "2025-03-11T13:26:16.218Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "name": "test apple",
+        "description": "asdsad",
+        "price": "123.00",
+        "category": 4,
+        "created_at": "2025-03-11T13:26:29.919Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "name": "test sony",
+        "description": "123",
+        "price": "123.00",
+        "category": 7,
+        "created_at": "2025-03-11T13:26:49.715Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "name": "test sony",
+        "description": "sadad",
+        "price": "123.00",
+        "category": 6,
+        "created_at": "2025-03-11T13:26:58.529Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "name": "test samsung",
+        "description": "123",
+        "price": "123.00",
+        "category": 9,
+        "created_at": "2025-03-11T13:27:41.158Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "name": "ultram 37mm",
+        "description": "1231",
+        "price": "123.00",
+        "category": 2,
+        "created_at": "2025-03-11T13:33:23.449Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "name": "ultram 23mm",
+        "description": "12313",
+        "price": "12222.00",
+        "category": 2,
+        "created_at": "2025-03-11T13:33:48.733Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "name": "ultram 231mm",
+        "description": "12312",
+        "price": "123.00",
+        "category": 2,
+        "created_at": "2025-03-11T13:34:00.053Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+        "name": "ultram 23mm",
+        "description": "12313",
+        "price": "123.00",
+        "category": 2,
+        "created_at": "2025-03-11T13:34:07.755Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+        "name": "12313",
+        "description": "123",
+        "price": "123.00",
+        "category": 2,
+        "created_at": "2025-03-11T13:34:29.190Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+        "name": "ultram 23213mm",
+        "description": "123131",
+        "price": "123.00",
+        "category": 2,
+        "created_at": "2025-03-11T13:34:55.486Z"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 1,
+    "fields": {
+        "product": 1,
+        "image": "products/apple/watches/product_1/акг_tHiJVbi.png"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 2,
+    "fields": {
+        "product": 2,
+        "image": "products/apple/laptops/product_2/мак.png"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 3,
+    "fields": {
+        "product": 3,
+        "image": "products/apple/phones/product_3/мак.png"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 4,
+    "fields": {
+        "product": 4,
+        "image": "products/sony/headphones/product_4/Avatar__The_Way_of_Water.jpeg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 5,
+    "fields": {
+        "product": 6,
+        "image": "products/samsung/tvs/product_6/dada22_-_Urban_Arts.jpeg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 6,
+    "fields": {
+        "product": 5,
+        "image": "products/sony/playstation/product_5/__4.jpeg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 7,
+    "fields": {
+        "product": 7,
+        "image": "products/apple/watches/product_7/25_Bright__Funky_Neon_Typography_Designs__Bashooka.jpeg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 8,
+    "fields": {
+        "product": 8,
+        "image": "products/apple/watches/product_8/Neon_Dream_Color_Palette.jpeg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 9,
+    "fields": {
+        "product": 11,
+        "image": "products/apple/watches/product_11/Emi_Walsh_Illustrations.jpeg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": 10,
+    "fields": {
+        "product": 12,
+        "image": "products/apple/watches/product_12/dada22_-_Urban_Arts.jpeg"
+    }
+},
+{
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+        "tg_id": 687061691,
+        "username": "Nolucker",
+        "first_name": "Pool",
+        "created_at": "2025-03-11T13:28:35.896Z"
+    }
+}
+]

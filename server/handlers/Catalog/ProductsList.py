@@ -1,5 +1,6 @@
 from aiogram import types, F
-from aiogram.types import InputMediaPhoto, FSInputFile
+from aiogram.exceptions import TelegramBadRequest
+from aiogram.types import InputMediaPhoto, FSInputFile, InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from handlers.routes import router, logger
 from aiogram.fsm.context import FSMContext
@@ -8,6 +9,7 @@ from products.models import Product, Category
 
 from states.history_static import set_user_state
 from states.states import UserState
+
 
 async def get_subcategory_products(parent_category_name, subcategory_name):
     """ Получает список товаров из категории и подкатегории Django ORM """
@@ -20,7 +22,6 @@ async def get_subcategory_products(parent_category_name, subcategory_name):
     products = await sync_to_async(lambda: list(subcategory.products.all()))()
     return products
 
-
 @router.callback_query(F.data.in_({'AppleWatches', 'AppleLaptops', 'IPhones', 'SonyPlaystation', 'SonyHeadphones', 'SamsungTVs'}))
 async def show_products(callback: types.CallbackQuery, state: FSMContext):
     """ Показывает первую страницу товаров """
@@ -32,18 +33,15 @@ async def show_products(callback: types.CallbackQuery, state: FSMContext):
         'SonyHeadphones': ('Sony', 'Headphones', 'server/assets/images/botPC.png'),
         'SamsungTVs': ('Samsung', 'TVs', 'server/assets/images/botPC.png'),
     }
-    print(callback.data)
-    category, subcategory, file_path = subcategory_map[callback.data]
 
-    data = await state.get_data()
-    history = data.get("history", [])
-    history.append(f"subcategory_selection:{callback.data}")
-    await state.update_data(history=history)
+    await state.update_data(sub_category=callback)
+    category, subcategory, file_path = subcategory_map[callback.data]
 
     await set_user_state(state, UserState.product_selection)
     await send_product_list(callback, callback.data, category, subcategory, file_path, page=0)
 
-@router.callback_query(F.data.regexp(r'^(AppleWatches|AppleLaptops|IPhones)_\d+$'))
+
+@router.callback_query(F.data.regexp(r'^(AppleWatches|AppleLaptops|IPhones|SonyPlaystation|SonyHeadphones|SamsungTVs)_\d+$'))
 async def paginate_products(callback: types.CallbackQuery, state: FSMContext):
     """ Обработчик для переключения страниц товаров """
     subcategory_map = {
@@ -61,13 +59,12 @@ async def paginate_products(callback: types.CallbackQuery, state: FSMContext):
 
     category, subcategory, file_path = subcategory_map[subcategory_key]
     await state.update_data(page=page)
-
     await send_product_list(callback, subcategory_key, category, subcategory, file_path, page)
 
 
 async def send_product_list(callback: types.CallbackQuery, subcategory_key: str, category: str, subcategory: str, file_path: str, page: int):
     """ Функция для отправки списка товаров с пагинацией """
-    print(category)
+
     products = await get_subcategory_products(category, subcategory)
 
     if not products:
@@ -85,27 +82,42 @@ async def send_product_list(callback: types.CallbackQuery, subcategory_key: str,
         builder.row(types.InlineKeyboardButton(text=f'🛒 {product.name} - {product.price} ₽',
                                                callback_data=f'product_{product.id}'))
 
-    # Кнопки "⬅️ Предыдущая страница" и "➡️ Следующая страница" в одной строке
     navigation_buttons = []
     if page > 0:
         prev_page = f"{subcategory_key}_{page - 1}"
-        navigation_buttons.append(types.InlineKeyboardButton(text='⬅️ Предыдущая страница', callback_data=prev_page))
-        logger.info(f"Кнопка предыдущая страница: {prev_page}")  # Логируем
+        navigation_buttons.append(types.InlineKeyboardButton(text=f'⬅️ Предыдущая[{page}]', callback_data=prev_page))
+        logger.info(f"Кнопка предыдущая страница: {prev_page}")
 
     if end_index < len(products):
         next_page = f"{subcategory_key}_{page + 1}"
-        navigation_buttons.append(types.InlineKeyboardButton(text='➡️ Следующая страница', callback_data=next_page))
-        logger.info(f"Кнопка следующая страница: {next_page}")  # Логируем
+        navigation_buttons.append(types.InlineKeyboardButton(text=f'➡️ Следующая[{page + 2}]', callback_data=next_page))
+        logger.info(f"Кнопка следующая страница: {next_page}")
 
     if navigation_buttons:
-        builder.row(*navigation_buttons)  # Добавляем обе кнопки в один ряд
+        builder.row(*navigation_buttons)
 
-    builder.row(types.InlineKeyboardButton(text='<< назад', callback_data="back"))
+    builder.row(types.InlineKeyboardButton(text='<< назад', callback_data=f"back"))
 
-    await callback.message.edit_media(
-        media=InputMediaPhoto(
-            media=FSInputFile(file_path),
-            caption=f'📋 Доступные товары ({subcategory}):'
-        ),
-        reply_markup=builder.as_markup()
-    )
+    current_caption = callback.message.caption or ""
+    current_markup = callback.message.reply_markup
+
+    new_caption = f'📋 Доступные товары: 🛍️Каталог -> {subcategory}'
+    new_markup = builder.as_markup()
+
+    if current_caption == new_caption and current_markup == new_markup:
+        return
+
+    try:
+        await callback.message.edit_media(
+            media=InputMediaPhoto(
+                media=FSInputFile(file_path),
+                caption=new_caption
+            ),
+            reply_markup=new_markup
+        )
+    except TelegramBadRequest as e:
+        if "message is not modified" in str(e):
+            return
+        else:
+            raise
+

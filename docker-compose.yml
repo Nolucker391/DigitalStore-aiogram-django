@@ -29,7 +29,7 @@ services:
                cd api &&
                python manage.py migrate &&
                python createsuperuser.py &&
-               python manage.py loaddata fixtures/products-fixtures.json &&
+               python manage.py loaddata fixtures/prodfixtures.json &&
                python manage.py loaddata fixtures/users-fixtures.json &&
                python manage.py loaddata fixtures/orders-fixtures.json &&
                python manage.py loaddata fixtures/mailing-fixtures.json &&

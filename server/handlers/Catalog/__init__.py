@@ -1,1 +1,6 @@
-from . import main, AppleCat, Accessories, prod
+from . import (
+    CatalogList,
+    SubCatalogList,
+    ProductsList,
+    ProductDetails
+)

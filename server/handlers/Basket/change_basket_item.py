@@ -33,7 +33,7 @@ async def delete_basket_item(telegram_id, product_id):
 
 
 from aiogram.types import InputMediaPhoto, FSInputFile
-from keyboards.catalog.sub_cat.ComputersBuilder import build_cart_keyboard
+from keyboards.catalog.navigration import build_cart_keyboard
 
 @router.callback_query(F.data.startswith("select_product_"))
 async def show_selected_product(callback: types.CallbackQuery, state: FSMContext):

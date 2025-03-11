@@ -5,11 +5,11 @@ from handlers.DefaultCommands.StartCommand import set_user_state
 from handlers.routes import router, logger
 from aiogram.fsm.context import FSMContext
 from states.states import UserState
-from keyboards.catalog.CategoriesBuilder import cat_builder
+from keyboards.catalog.keyboard import cat_builder
 
 @router.callback_query(F.data == 'first_block')
 async def section_shop(callback: types.CallbackQuery, state: FSMContext):
-    """Список товаров в магазине."""
+    """Список брендов товаров в магазине."""
     builder = cat_builder()
     file_path = "server/assets/images/catalog.png"
 
@@ -18,8 +18,8 @@ async def section_shop(callback: types.CallbackQuery, state: FSMContext):
     await set_user_state(state, UserState.catalog_selection)
     await callback.message.edit_media(
         media=InputMediaPhoto(
-            media=FSInputFile(file_path),  # Новый путь к фото
+            media=FSInputFile(file_path),
             caption='📋Список доступных ассортиментов.🛍️'
         ),
-        reply_markup=builder.as_markup()  # Обновленные кнопки (если нужны)
+        reply_markup=builder.as_markup()
     )
