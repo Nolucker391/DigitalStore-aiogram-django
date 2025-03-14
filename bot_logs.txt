@@ -89,3 +89,41 @@ client_session: <aiohttp.client.ClientSession object at 0xffff9b983010>
 2025-03-14 12:20:36,791 - ERROR - Unclosed connector
 connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0xffff9af87d20>, 5476.623726952)])']
 connector: <aiohttp.connector.TCPConnector object at 0xffff9b97c710>
+2025-03-14 13:07:24,807 - INFO - Бот 🧬 A & Z | DigitalStore запущен!
+2025-03-14 13:07:24,893 - INFO - Start polling
+2025-03-14 13:07:24,901 - INFO - Run polling for bot @almir_test_bot id=7687262287 - '🧬 A & Z | DigitalStore'
+2025-03-14 13:07:27,043 - INFO - Пользователь: Pool выбрал раздел Каталога.
+2025-03-14 13:07:28,079 - INFO - Update id=978412332 is handled. Duration 1038 ms by bot id=7687262287
+2025-03-14 13:07:31,451 - INFO - Пользователь: Pool выбрал раздел Каталога - AppleCat.
+2025-03-14 13:07:32,172 - INFO - Update id=978412333 is handled. Duration 722 ms by bot id=7687262287
+2025-03-14 13:07:32,921 - INFO - Пользователь: Pool выбрал раздел Каталога.
+2025-03-14 13:07:33,098 - INFO - Update id=978412334 is handled. Duration 179 ms by bot id=7687262287
+2025-03-14 13:07:33,908 - INFO - Нажата комманда /start
+2025-03-14 13:07:33,909 - INFO - 🔍 Данные пользователя: ID: 687061691, Username: Nolucker, First Name: Pool
+2025-03-14 13:07:34,136 - INFO - ℹ️ Пользователь уже существует: Pool (@Nolucker)
+2025-03-14 13:07:34,491 - INFO - Update id=978412335 is handled. Duration 587 ms by bot id=7687262287
+2025-03-14 13:07:34,990 - INFO - Пользователь: Pool выбрал раздел Каталога.
+2025-03-14 13:07:35,124 - INFO - Update id=978412336 is handled. Duration 135 ms by bot id=7687262287
+2025-03-14 13:07:36,561 - INFO - Пользователь: Pool выбрал раздел Каталога - AppleCat.
+2025-03-14 13:07:36,768 - INFO - Update id=978412337 is handled. Duration 208 ms by bot id=7687262287
+2025-03-14 13:07:55,198 - INFO - Кнопка следующая страница: AppleWatches_1
+2025-03-14 13:07:55,360 - INFO - Update id=978412338 is handled. Duration 189 ms by bot id=7687262287
+2025-03-14 13:07:56,904 - INFO - Пользователь: Pool выбрал раздел Каталога - AppleCat.
+2025-03-14 13:07:57,172 - INFO - Update id=978412339 is handled. Duration 273 ms by bot id=7687262287
+2025-03-14 13:08:13,396 - INFO - Пользователь: Pool выбрал раздел Каталога.
+2025-03-14 13:08:13,595 - INFO - Update id=978412340 is handled. Duration 221 ms by bot id=7687262287
+2025-03-14 13:08:15,550 - INFO - Пользователь: Pool выбрал раздел Каталога - SonyCat.
+2025-03-14 13:08:15,699 - INFO - Update id=978412341 is handled. Duration 149 ms by bot id=7687262287
+2025-03-14 13:08:16,968 - INFO - Update id=978412342 is handled. Duration 143 ms by bot id=7687262287
+2025-03-14 13:08:24,848 - INFO - Пользователь: Pool выбрал раздел Каталога - SonyCat.
+2025-03-14 13:08:25,582 - INFO - Update id=978412343 is handled. Duration 740 ms by bot id=7687262287
+2025-03-14 13:08:26,970 - INFO - Update id=978412344 is handled. Duration 184 ms by bot id=7687262287
+2025-03-14 13:08:30,421 - INFO - Пользователь: Pool выбрал раздел Каталога - SonyCat.
+2025-03-14 13:08:30,718 - INFO - Update id=978412345 is handled. Duration 303 ms by bot id=7687262287
+2025-03-14 13:08:32,189 - INFO - Пользователь: Pool выбрал раздел Каталога.
+2025-03-14 13:08:32,356 - INFO - Update id=978412346 is handled. Duration 172 ms by bot id=7687262287
+2025-03-14 13:08:33,307 - INFO - Пользователь: Pool выбрал раздел Каталога - SamsungCat.
+2025-03-14 13:08:33,553 - INFO - Update id=978412347 is handled. Duration 248 ms by bot id=7687262287
+2025-03-14 13:08:35,466 - INFO - Update id=978412348 is handled. Duration 166 ms by bot id=7687262287
+2025-03-14 13:10:50,171 - INFO - Пользователь: Pool выбрал раздел Каталога - SamsungCat.
+2025-03-14 13:10:50,320 - INFO - Update id=978412349 is handled. Duration 157 ms by bot id=7687262287

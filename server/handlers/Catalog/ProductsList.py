@@ -47,12 +47,12 @@ async def show_products(callback: types.CallbackQuery, state: FSMContext):
 async def paginate_products(callback: types.CallbackQuery, state: FSMContext):
     """ Обработчик для переключения страниц товаров """
     subcategory_map = {
-        'AppleWatches': ('Apple', 'Watches', 'server/assets/images/botPC.png'),
-        'AppleLaptops': ('Apple', 'Laptops', 'server/assets/images/botPC.png'),
-        'IPhones': ('Apple', 'Phones', 'server/assets/images/botPC.png'),
-        'SonyPlaystation': ('Sony', 'PlayStation', 'server/assets/images/botPC.png'),
-        'SonyHeadphones': ('Sony', 'Headphones', 'server/assets/images/botPC.png'),
-        'SamsungTVs': ('Samsung', 'TVs', 'server/assets/images/botPC.png'),
+        'AppleWatches': ('Apple', 'Watches', 'server/assets/images/watches.png'),
+        'AppleLaptops': ('Apple', 'Laptops', 'server/assets/images/laptops.png'),
+        'IPhones': ('Apple', 'Phones', 'server/assets/images/phones.png'),
+        'SonyPlaystation': ('Sony', 'PlayStation', 'server/assets/images/access.png'),
+        'SonyHeadphones': ('Sony', 'Headphones', 'server/assets/images/headphones.png'),
+        'SamsungTVs': ('Samsung', 'TVs', 'server/assets/images/tvs.png'),
     }
 
     callback_data_parts = callback.data.split('_')
