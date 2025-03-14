@@ -32,46 +32,6 @@
     }
 },
 {
-    "model": "products.category",
-    "pk": 5,
-    "fields": {
-        "name": "Sony",
-        "parent": null
-    }
-},
-{
-    "model": "products.category",
-    "pk": 6,
-    "fields": {
-        "name": "PlayStation",
-        "parent": 5
-    }
-},
-{
-    "model": "products.category",
-    "pk": 7,
-    "fields": {
-        "name": "Headphones",
-        "parent": 5
-    }
-},
-{
-    "model": "products.category",
-    "pk": 8,
-    "fields": {
-        "name": "Samsung",
-        "parent": null
-    }
-},
-{
-    "model": "products.category",
-    "pk": 9,
-    "fields": {
-        "name": "TVs",
-        "parent": 8
-    }
-},
-{
     "model": "products.product",
     "pk": 1,
     "fields": {
@@ -215,72 +175,6 @@
     }
 },
 {
-    "model": "products.product",
-    "pk": 14,
-    "fields": {
-        "name": "Игровая приставка Sony PlayStation 5 Slim Digital Edition 1TB White",
-        "description": "• Линейка: Playstation 5 Slim\r\n• Производитель процессора: amd\r\n• Модель процессора: AMD Ryzen Zen 2\r\n• Количество ядер: 8\r\n• Частота процессора, в Ггц: 3.5\r\n• Объем оперативной памяти, в Гб: 16\r\n• Графическое ядро: AMD Radeon RDNA 2\r\n• Поддержка HD: Full HD; Ultra HD (4K); Ultra HD (8K)",
-        "price": "57990.00",
-        "category": 6,
-        "created_at": "2025-03-14T11:59:42.977Z"
-    }
-},
-{
-    "model": "products.product",
-    "pk": 15,
-    "fields": {
-        "name": "Игровая приставка Sony PlayStation 5 Pro Blu-Ray 2 Тб",
-        "description": "• Линейка: Playstation 5 Pro\r\n• Производитель процессора: amd\r\n• Модель процессора: Zen 2\r\n• Количество ядер: 8\r\n• Частота процессора, в Ггц: 3.85\r\n• Объем оперативной памяти, в Гб: 16\r\n• Графическое ядро: RDNA 3\r\n• Wi-Fi: Да",
-        "price": "99890.00",
-        "category": 6,
-        "created_at": "2025-03-14T12:01:23.871Z"
-    }
-},
-{
-    "model": "products.product",
-    "pk": 16,
-    "fields": {
-        "name": "Игровые наушники Sony Inzone H3",
-        "description": "• Интерфейс подключения: радиоканал\r\n• Акустическое оформление: закрытое\r\n• Частотный диапазон, в Гц: 10-20000\r\n• Импеданс (Сопротивление), в Ом: 35\r\n• Система активного шумоподавления: Нет\r\n• Звуковая схема: 2.0\r\n• Подсветка: Нет",
-        "price": "11990.00",
-        "category": 7,
-        "created_at": "2025-03-14T12:02:24.860Z"
-    }
-},
-{
-    "model": "products.product",
-    "pk": 17,
-    "fields": {
-        "name": "Беспроводные наушники Sony WH-1000XM4 Blue",
-        "description": "• Интерфейс подключения: Bluetooth\r\n• Частотный диапазон, в Гц: 4-40000 \r\n• Импеданс (Сопротивление), в Ом: 50 \r\n• Система активного шумоподавления: Да \r\n• Микрофон: Да\r\n• Максимальное время работы, в ч: 30",
-        "price": "31990.00",
-        "category": 7,
-        "created_at": "2025-03-14T12:03:52.184Z"
-    }
-},
-{
-    "model": "products.product",
-    "pk": 18,
-    "fields": {
-        "name": "Беспроводные наушники Sony Sony WH-1000XM5 Silver White Smoke",
-        "description": "• Интерфейс подключения: Bluetooth\r\n• Частотный диапазон, в Гц: 4-40000 \r\n• Чувствительность, в дБ: 102 \r\n• Система активного шумоподавления: Да \r\n• Микрофон: Да\r\n• Максимальное время работы, в ч: 40",
-        "price": "34990.00",
-        "category": 7,
-        "created_at": "2025-03-14T12:04:58.533Z"
-    }
-},
-{
-    "model": "products.product",
-    "pk": 19,
-    "fields": {
-        "name": "Телевизор Samsung UE43AU9070U, 43\"(109 см), UHD 4K",
-        "description": "• Размер экрана: 43\"(109 см)\r\n• Технология экрана: LED \r\n• Разрешение экрана: UHD 4K (3840x2160) \r\n• Частота обновления экрана, в Гц: 60Hz \r\n• Голосовой помощник: Google Assistant \r\n• Прием ТВ сигнала: Цифровое ТВ (DVB-T2); Кабельное ТВ (DVB-C); Спутниковое ТВ (DVB-S2)\r\n• Улучшение изображения: HDR10+; HLG \r\n• Беспроводное подключение: Wi-Fi; Bluetooth\r\n• Мощность звука, в Вт: 20\r\n• Разъемы: Optical",
-        "price": "55890.00",
-        "category": 9,
-        "created_at": "2025-03-14T12:08:07.370Z"
-    }
-},
-{
     "model": "products.productimage",
     "pk": 3,
     "fields": {
@@ -374,54 +268,6 @@
     "fields": {
         "product": 13,
         "image": "products/apple/phones/product_13/image-Photoroom_9.jpg"
-    }
-},
-{
-    "model": "products.productimage",
-    "pk": 16,
-    "fields": {
-        "product": 14,
-        "image": "products/sony/playstation/product_14/image-Photoroom_10.jpg"
-    }
-},
-{
-    "model": "products.productimage",
-    "pk": 17,
-    "fields": {
-        "product": 15,
-        "image": "products/sony/playstation/product_15/image-Photoroom_11.jpg"
-    }
-},
-{
-    "model": "products.productimage",
-    "pk": 18,
-    "fields": {
-        "product": 16,
-        "image": "products/sony/headphones/product_16/image-Photoroom_12.jpg"
-    }
-},
-{
-    "model": "products.productimage",
-    "pk": 19,
-    "fields": {
-        "product": 17,
-        "image": "products/sony/headphones/product_17/image-Photoroom_13.jpg"
-    }
-},
-{
-    "model": "products.productimage",
-    "pk": 20,
-    "fields": {
-        "product": 18,
-        "image": "products/sony/headphones/product_18/image-Photoroom_14.jpg"
-    }
-},
-{
-    "model": "products.productimage",
-    "pk": 21,
-    "fields": {
-        "product": 19,
-        "image": "products/samsung/tvs/product_19/image-Photoroom_15.jpg"
     }
 }
 ]

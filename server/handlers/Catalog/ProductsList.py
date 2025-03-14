@@ -19,7 +19,9 @@ async def get_subcategory_products(parent_category_name, subcategory_name):
     subcategory = await sync_to_async(lambda: parent_category.subcategories.filter(name=subcategory_name).first())()
     if not subcategory:
         return []
-    products = await sync_to_async(lambda: list(subcategory.products.all()))()
+    # products = await sync_to_async(lambda: list(subcategory.products.all()))()
+    products = await sync_to_async(lambda: list(subcategory.products.order_by('price')))()
+
     return products
 
 @router.callback_query(F.data.in_({'AppleWatches', 'AppleLaptops', 'IPhones', 'SonyPlaystation', 'SonyHeadphones', 'SamsungTVs'}))
@@ -79,7 +81,7 @@ async def send_product_list(callback: types.CallbackQuery, subcategory_key: str,
     builder = InlineKeyboardBuilder()
 
     for product in paginated_products:
-        builder.row(types.InlineKeyboardButton(text=f'🛒 {product.name} - {product.price} ₽',
+        builder.row(types.InlineKeyboardButton(text=f'🧬 {product.name} - {product.price} ₽',
                                                callback_data=f'product_{product.id}'))
 
     navigation_buttons = []
