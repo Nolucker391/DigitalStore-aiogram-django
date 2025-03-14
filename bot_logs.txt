@@ -127,3 +127,37 @@ connector: <aiohttp.connector.TCPConnector object at 0xffff9b97c710>
 2025-03-14 13:08:35,466 - INFO - Update id=978412348 is handled. Duration 166 ms by bot id=7687262287
 2025-03-14 13:10:50,171 - INFO - Пользователь: Pool выбрал раздел Каталога - SamsungCat.
 2025-03-14 13:10:50,320 - INFO - Update id=978412349 is handled. Duration 157 ms by bot id=7687262287
+2025-03-14 13:19:20,161 - WARNING - Received SIGTERM signal
+2025-03-14 13:19:20,171 - INFO - Polling stopped for bot @almir_test_bot id=7687262287 - '🧬 A & Z | DigitalStore'
+2025-03-14 13:19:20,172 - INFO - Polling stopped
+2025-03-14 13:19:20,710 - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0xffff98a74250>
+2025-03-14 13:24:44,530 - INFO - Бот 🧬 A & Z | DigitalStore запущен!
+2025-03-14 13:24:44,609 - INFO - Start polling
+2025-03-14 13:24:44,609 - INFO - Run polling for bot @almir_test_bot id=7687262287 - '🧬 A & Z | DigitalStore'
+2025-03-14 13:25:11,640 - INFO - Кнопка следующая страница: AppleWatches_1
+2025-03-14 13:25:12,562 - INFO - Update id=978412355 is handled. Duration 1004 ms by bot id=7687262287
+2025-03-14 13:25:14,052 - INFO - Нажата комманда /start
+2025-03-14 13:25:14,052 - INFO - 🔍 Данные пользователя: ID: 687061691, Username: Nolucker, First Name: Pool
+2025-03-14 13:25:14,371 - INFO - ℹ️ Пользователь уже существует: Pool (@Nolucker)
+2025-03-14 13:25:15,398 - INFO - Update id=978412356 is handled. Duration 1348 ms by bot id=7687262287
+2025-03-14 13:25:15,920 - INFO - Нажата комманда /start
+2025-03-14 13:25:15,920 - INFO - 🔍 Данные пользователя: ID: 687061691, Username: Nolucker, First Name: Pool
+2025-03-14 13:25:16,005 - INFO - ℹ️ Пользователь уже существует: Pool (@Nolucker)
+2025-03-14 13:25:17,728 - INFO - Update id=978412357 is handled. Duration 1808 ms by bot id=7687262287
+2025-03-14 13:25:22,119 - INFO - Пользователь: Pool выбрал раздел Каталога.
+2025-03-14 13:25:22,424 - INFO - Update id=978412358 is handled. Duration 307 ms by bot id=7687262287
+2025-03-14 13:25:23,328 - INFO - Пользователь: Pool выбрал раздел Каталога - AppleCat.
+2025-03-14 13:25:23,730 - INFO - Update id=978412359 is handled. Duration 404 ms by bot id=7687262287
+2025-03-14 13:25:24,689 - INFO - Кнопка следующая страница: AppleWatches_1
+2025-03-14 13:25:24,877 - INFO - Update id=978412360 is handled. Duration 205 ms by bot id=7687262287
+2025-03-14 13:25:26,167 - INFO - Пользователь: Pool выбрал раздел Каталога - AppleCat.
+2025-03-14 13:25:26,447 - INFO - Update id=978412361 is handled. Duration 284 ms by bot id=7687262287
+2025-03-14 13:25:37,568 - WARNING - Received SIGTERM signal
+2025-03-14 13:25:37,571 - INFO - Polling stopped for bot @almir_test_bot id=7687262287 - '🧬 A & Z | DigitalStore'
+2025-03-14 13:25:37,572 - INFO - Polling stopped
+2025-03-14 13:25:38,017 - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0xffffa3492910>
+2025-03-14 13:25:38,017 - ERROR - Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0xffffa3334d00>, 8181.667444098)])']
+connector: <aiohttp.connector.TCPConnector object at 0xffffa347f110>
