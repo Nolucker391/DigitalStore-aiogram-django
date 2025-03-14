@@ -10,7 +10,7 @@ import asyncio
 from asgiref.sync import async_to_sync, sync_to_async
 from aiogram.types import FSInputFile
 
-bot = Bot(token="7687262287:AAEW1ttb4x_XU74ab93hkCLuPK7FqjdR2a4")
+bot = Bot(token=token)
 
 async def send_message_to_users(message):
     users = await sync_to_async(list)(User.objects.all())
